@@ -4,7 +4,11 @@
     margin: 0;
     padding: 0;
 }
-
+/*MAIN-HEADER*/
+header{
+    background-color: gray;
+    padding: 40px;
+}
 ul, ol {
     list-style: none;
 }
@@ -14,3 +18,12 @@ a {
     text-decoration: none;
 }
 
+.navbar  {
+    display: flex;
+    justify-content: space-between;
+}
+.list-navbar{
+    display: flex;
+    gap: 15px;
+    
+}
