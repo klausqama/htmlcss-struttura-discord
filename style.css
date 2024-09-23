@@ -1,6 +1,6 @@
 /*RESET RULES CSS*/
 * {
-    box-sizing: 0;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -31,6 +31,7 @@ a {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .flex {
@@ -95,7 +96,7 @@ a {
 }
 
 
-.h-200 {
+/* .h-200 {
     min-height: 200px;
     flex-wrap: wrap;
 }
@@ -107,11 +108,15 @@ a {
 }
 .h-500{
     min-height: 500px;
-}
+} */
 .bg-pink{
     background-color: pink;
 }
 .main-footer{
     background-color: white;
 
+}
+
+.debug .row > * {
+    height: 250px;
 }
