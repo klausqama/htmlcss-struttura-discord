@@ -1,90 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htmlcss-struttura-discord</title>
+    <title>discord struttura</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+<header class="main-header debug">
+    <nav class="container navbar">
+        <a class="logo" href="#">Logo</a>
+        <ul class="menu">
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+        </ul>
+        <a class="login-button" href="#">Login</a>
+    </nav>
+</header>
 
-<body class="debug">
-    <!--Flex container-->
-    <header>
-        <nav class="navbar bg-orange flex space-between">
-            <a href="logo">logo</a>
-            <ul class="list-navbar flex gap-15">
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-            </ul>
-            <a href="login">login</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="flex justify-center pt-30 pb-30 bg-violet">
-            <div class="container">
-                <div class="row  col-100 bg-pink">
-                </div>
-                
-        </section>
-
-        <section class="flex justify-center pt-30 pb-30">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-40 bg-yellow"></div>
-                    <div class="col-60 bg-orange">
-                        <h2></h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="flex justify-center pt-30 pb-30 bg-gray">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-60 bg-green"></div>
-                    <div class="col-40 bg-orange"></div>
-                </div>
-            </div>
-        </section>
-        <section class="flex justify-center pt-30 pb-30">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-60 bg-green"></div>
-                    <div class="col-40 bg-orange"></div>
-                </div>
-            </div>
-        </section>
-        <section class="flex justify-center pt-30 pb-30 bg-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-100 bg-green"></div>
-                </div>
-            </div>
-        </section>
-       
-    </main>
-
-    <footer class="main-footer flex justify-center">
-        <section class="container ">
+<main>
+    <section class="hero debug ">
+        <div class="container-small">
             <div class="row">
-                <div class="col-33 bg-pink">col33</div>
-                <div class="col-16 bg-lightazure">col16</div>
-                <div class="col-16 bg-lightazure">col16</div>
-                <div class="col-16 bg-lightazure">col16</div>
-                <div class="col-16 bg-lightazure">col16</div>
-                <div class="flex bg-orange justify-center pb-30 pt-30 col-100 space-between">
-                    <a href="logo">Logo</a>
-                    <a href="Bottone">Bottone</a>
+                <div class="col-100"> 
+                    hero
                 </div>
             </div>
-        </section>
+        </div>
+     </section>
+     <section class="feature debug ">
+        <div class="container">
+            <div class="row">
+                <div class="col-60">
+                    2col
+                </div>
+                <div class="col-40"> 
+                    1col
+            </div>
+    </section>
+    <section class="feature debug bg-gray ">
+        <div class="container">
+            <div class="row">
+                <div class="col-40"> 
+                    1col
+                </div>
+                <div class="col-60">
+                    2col
+                </div>
+    </section>
+    <section class="feature debug ">
+        <div class="container">
+            <div class="row">
+                <div class="col-60">
+                    2col
+                </div>
+                <div class="col-40"> 
+                    1col
+            </div>
+    </section>
+    <section class="feature green-section debug bg-gray ">
+        <div class="container">
+            <div class="row">
+                <div class="col-100">
+                    green col
+                </div>
+               
+    </section>
+    
+</main>
 
-    </footer>
+<footer>footer</footer>
 
 </body>
-
 </html>

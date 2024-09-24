@@ -1,122 +1,106 @@
-/*RESET RULES CSS*/
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-/*MAIN-HEADER*/
-header{
-    background-color: gray;
-    padding: 40px;
-}
-ul, ol {
-    list-style: none;
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
 }
 
-a {
+/*reset rules*/
+
+a{
     color: currentColor;
     text-decoration: none;
 }
-
-/*UTILITIES*/
-
-.container {
-    width: 100%;
-    max-width: 800px;
+ul,ol{
+    list-style: none;
 }
 
-.gap-15 {
-    gap: 15px;
-}
+/* layout*/
 
-.row {
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.container-small{
+    max-width: 600px ;
+    margin: 0 auto;
+}
+.row{
     display: flex;
     flex-wrap: wrap;
 }
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.col-100 {
+.col-100{
     width: 100%;
 }
-
-.col-60 {
-    width: 60%;
-}
-
 .col-40{
     width: 40%;
 }
-.col-33
-{
-    width: calc(100% / 3);
+.col-60{
+    width: 60%;
+}
+.col-13{
+    width: :calc(100%/3);
 }
 .col-16{
     width: calc(100%/6);
 }
 
-.bg-yellow {
-    background-color: yellow;
-}
+/*debug*/
 
-.pt-30 {
-    padding-top: 30px;
-}
-.pb-30{
-    padding-bottom: 30px;
-}
-
-
-.bg-green {
-    background-color: green;
-}
-.bg-violet{
-    background-color: violet;
-}
-.bg-gray{
-    background-color: gray;
-}
-
-.bg-orange {
+.debug .navbar > *{
     background-color: orange;
+    border: 2px dashed black;
+    padding: 8px;
 }
-.bg-lightazure{
-    background-color: rgb(131, 194, 246);
-}
+.debug.hero {
+    background-color: blue ;
+    color: white;
+    padding: 50px 0;
 
-
-/* .h-200 {
-    min-height: 200px;
-    flex-wrap: wrap;
 }
-.h-300{
-    min-height: 300px;
+.debug.hero .row >* {
+    background-color: violet;
+    border: 2px dashed black;
+    min-height: 400px;
 }
-.h-250{
-    min-height: 250px;
+.debug.feature .row >* { 
+    border: 2px dashed black;
+    min-height: 400px;
 }
-.h-500{
-    min-height: 500px;
-} */
-.bg-pink{
+.debug.feature {
+    padding: 50px 0;
+}
+.debug.feature .col-40{
     background-color: pink;
+    color: white;
 }
-.main-footer{
-    background-color: white;
-
+.debug.feature .col-60{
+    background-color: rgb(110, 110, 232);
+    color: white;
+}
+.debug.green-section .row> * {
+    background-color: green;
+    color: white;
+    min-height: 600px;
+}
+/*utilities*/
+.bg-gray{
+    background-color: rgb(172, 160, 160);
 }
 
-.debug .row > * {
-    height: 250px;
+
+
+/*header*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header{
+    background-color: rgb(32, 233, 243);
+    padding: 30px 0;
+}
+.navbar .menu{
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
