@@ -38,7 +38,7 @@ ul,ol{
     width: 60%;
 }
 .col-13{
-    width: :calc(100%/3);
+    width: calc(100%/3);
 }
 .col-16{
     width: calc(100%/6);
@@ -86,6 +86,12 @@ ul,ol{
 .bg-gray{
     background-color: rgb(172, 160, 160);
 }
+.justify-con{
+    justify-content: space-between;
+}
+.align-ite{
+    align-items: center;
+}
 
 
 
@@ -103,4 +109,26 @@ ul,ol{
     display: flex;
     gap: 16px;
     align-items: center;
+}
+
+/*footer*/
+ .footer-section{
+    background-color: rgb(50, 49, 49);
+    color: white;
+ }
+.footer-section .debug .row > .col-16{
+    border: 2px dashed white;
+    color: white;
+    background-color: lightseagreen;
+}
+.footer-section .debug .row > .col-13{
+    border: 2px dashed black;
+    color: white;
+    background-color: salmon;
+}
+.footer-section .debug .row > *{
+    min-height: 300px;
+}
+.footer-section .debug{
+    padding: 30px 0;
 }
